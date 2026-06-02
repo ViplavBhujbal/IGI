@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="See the measurable impact of ImpactGuru Inc.'s healthcare and humanitarian programs through data, stories, and reports.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Our Impact - ImpactGuru Inc.">
+  <meta property="og:description" content="Explore the impact of our healthcare and humanitarian relief programs through verified metrics and beneficiary stories.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💙</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/professional-refresh.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  
+  <!-- Chart Legend Styles -->
+  <style>
+    .chart-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      justify-content: center;
+    }
+    .chart-legend__item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      color: #64748b;
+    }
+    .chart-legend__color {
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+    }
+    .chart-legend__value {
+      font-weight: 600;
+      color: #1e293b;
+    }
+  </style>
+  
+  <title>Our Impact - ImpactGuru Inc.</title>
+</head>
+<body class="impact-page">
+  <!-- Skip to main content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo" aria-label="ImpactGuru Inc. Home">
+          <div class="header__logo-icon">IG</div>
+          <div class="header__logo-text">ImpactGuru <span>Inc.</span></div>
+        </a>
+
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="programs.html" class="nav__link">Programs</a></li>
+            <li><a href="impact.html" class="nav__link nav__link--active">Impact</a></li>
+            <li><a href="why-impactguru-ink.html" class="nav__link">Why Us</a></li>
+            <li><a href="financial-transparency.html" class="nav__link">Transparency</a></li>
+            <li><a href="corporate-partnerships.html" class="nav__link">Partnerships</a></li>
+            
+          </ul>
+          
+          <div class="nav__cta">
+            <a href="donate.html" class="btn btn--primary">Donate</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="page-header__content">
+          <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span aria-current="page">Impact</span>
+          </nav>
+          <h1>Our Impact</h1>
+          <p>Measurable outcomes, verified results, and real stories of lives transformed through your support.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Dashboard -->
+    <section class="impact-dashboard" aria-labelledby="dashboard-title">
+      <div class="container">
+        <h2 id="dashboard-title" class="sr-only">Impact Dashboard</h2>
+        <div class="impact-dashboard__grid">
+          <article class="impact-stat animate-on-scroll">
+            <div class="impact-stat__value" data-counter="125000" data-suffix="+">0</div>
+            <div class="impact-stat__label">Patients Supported</div>
+            <div class="impact-stat__change">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+              +32% from last year
+            </div>
+          </article>
+          
+          <article class="impact-stat impact-stat--accent animate-on-scroll">
+            <div class="impact-stat__value" data-counter="48500" data-suffix="+">0</div>
+            <div class="impact-stat__label">Treatments Funded</div>
+            <div class="impact-stat__change">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+              +28% from last year
+            </div>
+          </article>
+          
+          <article class="impact-stat impact-stat--secondary animate-on-scroll">
+            <div class="impact-stat__value" data-counter="18" data-prefix="$" data-suffix="M+">0</div>
+            <div class="impact-stat__label">Funds Mobilized</div>
+            <div class="impact-stat__change">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+              +45% from last year
+            </div>
+          </article>
+          
+          <article class="impact-stat animate-on-scroll">
+            <div class="impact-stat__value" data-counter="850" data-suffix="+">0</div>
+            <div class="impact-stat__label">Communities Reached</div>
+            <div class="impact-stat__change">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+              +22% from last year
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Charts Section -->
+    <section class="charts-section" aria-labelledby="charts-title">
+      <div class="container">
+        <header style="text-align: center; max-width: 600px; margin: 0 auto var(--spacing-xl);">
+          <h2 id="charts-title">Impact Over Time</h2>
+          <p>Track our progress and see how donor support has grown our impact year over year.</p>
+        </header>
+        
+        <div class="charts-section__grid">
+          <!-- Bar Chart -->
+          <article class="chart-card animate-on-scroll">
+            <div class="chart-card__header">
+              <h3 class="chart-card__title">Patients Supported by Year</h3>
+              <p class="chart-card__subtitle">Annual growth in healthcare beneficiaries</p>
+            </div>
+            <div class="chart-container">
+              <canvas id="barChart" style="width: 100%; height: 100%;"></canvas>
+            </div>
+          </article>
+          
+          <!-- Donut Chart -->
+          <article class="chart-card animate-on-scroll">
+            <div class="chart-card__header">
+              <h3 class="chart-card__title">Program Allocation</h3>
+              <p class="chart-card__subtitle">Distribution of funds across programs</p>
+            </div>
+            <div class="chart-container">
+              <canvas id="donutChart" style="width: 100%; height: 100%;"></canvas>
+            </div>
+            <div class="chart-legend"></div>
+          </article>
+        </div>
+        
+        <!-- Line Chart -->
+        <article class="chart-card animate-on-scroll" style="margin-top: var(--spacing-lg);">
+          <div class="chart-card__header">
+            <h3 class="chart-card__title">Monthly Donations Trend</h3>
+            <p class="chart-card__subtitle">Tracking donor contributions throughout 2024</p>
+          </div>
+          <div class="chart-container">
+            <canvas id="lineChart" style="width: 100%; height: 100%;"></canvas>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Geographic Reach -->
+    <section class="geographic-section" aria-labelledby="geographic-title">
+      <div class="container">
+        <div class="geographic-section__grid">
+          <div class="geographic-section__map animate-on-scroll">
+            <div class="geographic-section__map-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="10" r="3"></circle>
+                <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"></path>
+              </svg>
+              <p>Interactive Map Coming Soon</p>
+              <p style="font-size: 0.875rem;">Programs active across 18 states in India</p>
+            </div>
+          </div>
+          
+          <div class="animate-on-scroll">
+            <h2 id="geographic-title">Geographic Reach</h2>
+            <p style="margin-bottom: var(--spacing-lg);">Our programs span across India, reaching communities in need from urban centers to remote villages.</p>
+            
+            <div class="region-list">
+              <article class="region-item">
+                <div class="region-item__icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="10" r="3"></circle>
+                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"></path>
+                  </svg>
+                </div>
+                <div class="region-item__content">
+                  <p class="region-item__name">Northern India</p>
+                  <p class="region-item__stats">35,000+ patients in 6 states</p>
+                </div>
+              </article>
+              
+              <article class="region-item">
+                <div class="region-item__icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="10" r="3"></circle>
+                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"></path>
+                  </svg>
+                </div>
+                <div class="region-item__content">
+                  <p class="region-item__name">Western India</p>
+                  <p class="region-item__stats">42,000+ patients in 4 states</p>
+                </div>
+              </article>
+              
+              <article class="region-item">
+                <div class="region-item__icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="10" r="3"></circle>
+                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"></path>
+                  </svg>
+                </div>
+                <div class="region-item__content">
+                  <p class="region-item__name">Southern India</p>
+                  <p class="region-item__stats">38,000+ patients in 5 states</p>
+                </div>
+              </article>
+              
+              <article class="region-item">
+                <div class="region-item__icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="10" r="3"></circle>
+                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"></path>
+                  </svg>
+                </div>
+                <div class="region-item__content">
+                  <p class="region-item__name">Eastern India</p>
+                  <p class="region-item__stats">10,000+ patients in 3 states</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficiary Stories -->
+    <section class="section section--light" aria-labelledby="stories-title">
+      <div class="container">
+        <header style="text-align: center; max-width: 600px; margin: 0 auto var(--spacing-xl);">
+          <h2 id="stories-title">Beneficiary Stories</h2>
+          <p>Real stories from real people whose lives have been transformed through your generous support.</p>
+        </header>
+        
+        <div class="grid grid--3">
+          <article class="story-card impact-metric-card animate-on-scroll">
+            <div class="story-card__image">
+              <div class="story-card__image-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 60px; height: 60px; color: rgba(255,255,255,0.5);">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="story-card__content">
+              <p class="story-card__quote">Example beneficiary pathway: premature newborns may require ventilator support, incubator care, specialist monitoring, and medication support during the first weeks of life.</p>
+              <p class="story-card__author">NICU Support</p>
+              <p class="story-card__location">Illustrative example, not a personal testimonial</p>
+            </div>
+          </article>
+          
+          <article class="story-card impact-metric-card animate-on-scroll">
+            <div class="story-card__image">
+              <div class="story-card__image-placeholder" style="background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 60px; height: 60px; color: rgba(255,255,255,0.5);">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="story-card__content">
+              <p class="story-card__quote">Program outcome focus: support can help patients continue chemotherapy, diagnostics, travel, and post-treatment follow-up when costs interrupt care.</p>
+              <p class="story-card__author">Cancer Care Continuity</p>
+              <p class="story-card__location">Metric-based program summary</p>
+            </div>
+          </article>
+          
+          <article class="story-card impact-metric-card animate-on-scroll">
+            <div class="story-card__image">
+              <div class="story-card__image-placeholder" style="background: linear-gradient(135deg, #ff6b35 0%, #e85a24 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 60px; height: 60px; color: rgba(255,255,255,0.5);">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="story-card__content">
+              <p class="story-card__quote">Disaster response reporting should document relief kits distributed, medical consultations completed, response timelines, and community partners involved.</p>
+              <p class="story-card__author">Relief Response</p>
+              <p class="story-card__location">Program reporting framework</p>
+            </div>
+          </article>
+        </div>
+        
+        <div style="text-align: center; margin-top: var(--spacing-xl);">
+          <a href="programs.html" class="btn btn--secondary">Read More Stories</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program-wise Impact -->
+    <section class="section" aria-labelledby="program-impact-title">
+      <div class="container">
+        <header style="text-align: center; max-width: 600px; margin: 0 auto var(--spacing-xl);">
+          <h2 id="program-impact-title">Program-wise Impact</h2>
+          <p>Detailed breakdown of impact across our three core program areas.</p>
+        </header>
+        
+        <div class="grid grid--3">
+          <article class="program-card animate-on-scroll" style="padding: var(--spacing-xl);">
+            <div class="program-card__image" style="height: 160px;">
+              <div class="program-card__image-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 60px; height: 60px;">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="program-card__content" style="padding: var(--spacing-md) 0 0;">
+              <h3 class="program-card__title">Critical Care</h3>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                <div>
+                  <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">15K+</p>
+                  <p style="font-size: 0.8125rem; color: var(--color-dark-gray);">Patients Treated</p>
+                </div>
+                <div>
+                  <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">85%</p>
+                  <p style="font-size: 0.8125rem; color: var(--color-dark-gray);">Survival Rate</p>
+                </div>
+                <div>
+                  <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">120+</p>
+                  <p style="font-size: 0.8125rem; color: var(--color-dark-gray);">Partner Hospitals</p>
+                </div>
+                <div>
+                  <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">$6M+</p>
+                  <p style="font-size: 0.8125rem; color: var(--color-dark-gray);">Funds Deployed</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          
+          <article class="program-card animate-on-scroll" style="padding: var(--spacing-xl);">
+            <div class="program-card__image" style="height: 160px;">
+              <div class="program-card__image-placeholder" style="background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 60px; height: 60px;">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="program-card__content" style="padding: var(--spacing-md) 0 0;">
+              <h3 class="program-card__title">Cancer Care</h3>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                <div>
+                  <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-accent);">8.5K+</p>
+                  <p style="font-size: 0.8125rem; color: var(--color-dark-gray);">Patients Treated</p>
+                </div>
+                <div>
+                  <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-accent);">12</p>
+                  <p style="font-size: 0.8125rem; color: var(--color-dark-gray);">Cancer Types</p>
+                </div>
+                <div>
+                  <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-accent);">45+</p>
+                  <p style="font-size: 0.8125rem; color: var(--color-dark-gray);">Oncology Partners</p>
+                </div>
+                <div>
+                  <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-accent);">$5M+</p>
+                  <p style="font-size: 0.8125rem; color: var(--color-dark-gray);">Funds Deployed</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          
+          <article class="program-card animate-on-scroll" style="padding: var(--spacing-xl);">
+            <div class="program-card__image" style="height: 160px;">
+              <div class="program-card__image-placeholder" style="background: linear-gradient(135deg, #ff6b35 0%, #e85a24 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 60px; height: 60px;">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 8v4"></path>
+                  <path d="M12 16h.01"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="program-card__content" style="padding: var(--spacing-md) 0 0;">
+              <h3 class="program-card__title">Disaster Relief</h3>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                <div>
+                  <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-secondary);">156+</p>
+                  <p style="font-size: 0.8125rem; color: var(--color-dark-gray);">Responses</p>
+                </div>
+                <div>
+                  <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-secondary);">250K+</p>
+                  <p style="font-size: 0.8125rem; color: var(--color-dark-gray);">People Reached</p>
+                </div>
+                <div>
+                  <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-secondary);">18</p>
+                  <p style="font-size: 0.8125rem; color: var(--color-dark-gray);">States Covered</p>
+                </div>
+                <div>
+                  <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-secondary);">$7M+</p>
+                  <p style="font-size: 0.8125rem; color: var(--color-dark-gray);">Relief Provided</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" aria-labelledby="impact-cta-title">
+      <div class="container">
+        <div class="cta-section__content">
+          <h2 id="impact-cta-title">Be Part of Our Impact</h2>
+          <p>Every donation creates measurable change. Join thousands of donors who are making a difference in healthcare access and humanitarian relief.</p>
+          <div class="cta-section__buttons">
+            <a href="index.html#donate" class="btn btn--primary btn--large">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+              Donate Now
+            </a>
+            <a href="financial-transparency.html" class="btn btn--outline-white btn--large">
+              View Financial Reports
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <div class="footer__logo-icon">IG</div>
+            <div class="footer__logo-text">ImpactGuru <span>Inc.</span></div>
+          </a>
+          <p class="footer__tagline">A 501(c)(3) nonprofit organization supporting healthcare access and humanitarian relief programs in India.</p>
+          <p class="footer__address">718 Long Bridge Street, Apt 323, San Francisco, CA 94158</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer__column">
+          <h4>Programs</h4>
+          <nav class="footer__links" aria-label="Programs">
+            <a href="programs.html#critical-care" class="footer__link">Critical Care</a>
+            <a href="programs.html#cancer-care" class="footer__link">Cancer Care</a>
+            <a href="programs.html#disaster-relief" class="footer__link">Disaster Relief</a>
+            <a href="impact.html" class="footer__link">Our Impact</a>
+          </nav>
+        </div>
+        
+        <div class="footer__column">
+          <h4>Organization</h4>
+          <nav class="footer__links" aria-label="Organization">
+            <a href="why-impactguru-ink.html" class="footer__link">About Us</a>
+            <a href="financial-transparency.html" class="footer__link">Transparency</a>
+            <a href="corporate-partnerships.html" class="footer__link">Partnerships</a>
+            <a href="#" class="footer__link">Careers</a>
+          </nav>
+        </div>
+        
+        <div class="footer__column">
+          <h4>Legal</h4>
+          <nav class="footer__links" aria-label="Legal">
+            <a href="#" class="footer__link">Privacy Policy</a>
+            <a href="#" class="footer__link">Terms of Service</a>
+            <a href="#" class="footer__link">Donor Rights</a>
+            <a href="#" class="footer__link">Contact Us</a>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 ImpactGuru Inc. All rights reserved. EIN: 12-3456789</p>
+        <div class="footer__legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
