@@ -12,54 +12,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="get-involved-page">
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="index.html" class="logo">
-                    <span class="logo-icon">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
-                            <path d="M16 8L18.5 13H13.5L16 8Z" fill="currentColor"/>
-                            <path d="M16 24L13.5 19H18.5L16 24Z" fill="currentColor"/>
-                            <circle cx="16" cy="16" r="3" fill="currentColor"/>
-                        </svg>
-                    </span>
-                    <span class="logo-text">ImpactGuru <span>Inc.</span></span>
-                </a>
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="has-dropdown">
-                        <a href="programs.html">Programs</a>
-                        <ul class="dropdown">
-                            <li><a href="programs.html#medical">Medical Aid</a></li>
-                            <li><a href="programs.html#education">Education Support</a></li>
-                            <li><a href="programs.html#disaster">Disaster Relief</a></li>
-                            <li><a href="programs.html#community">Community Development</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="impact.html">Impact</a></li>
-                    <li class="has-dropdown">
-                        <a href="why-impactguru-ink.html">About</a>
-                        <ul class="dropdown">
-                            <li><a href="why-impactguru-ink.html">Why ImpactGuru Inc.</a></li>
-                            <li><a href="financial-transparency.html">Financial Transparency</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="get-involved.html" class="active">Get Involved</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <a href="donate.html" class="btn btn-primary nav-donate">Donate</a>
-            </nav>
-        </div>
-    </header>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo" aria-label="ImpactGuru Inc. Home">
+          <div class="header__logo-icon">IG</div>
+          <div class="header__logo-text">ImpactGuru <span>Inc.</span></div>
+        </a>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="about.html" class="nav__link">About</a></li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="programs.html" class="nav__link" aria-haspopup="true">Programs <span class="nav__dropdown-arrow" aria-hidden="true">▾</span></a>
+              <ul class="nav__dropdown" role="menu">
+                <li><a href="critical-care.html" class="nav__dropdown-link" role="menuitem"><span class="nav__dropdown-icon nav__dropdown-icon--critical"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>Critical Care</a></li>
+                <li><a href="cancer-care.html" class="nav__dropdown-link" role="menuitem"><span class="nav__dropdown-icon nav__dropdown-icon--cancer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg></span>Cancer Care</a></li>
+                <li><a href="disaster-relief.html" class="nav__dropdown-link" role="menuitem"><span class="nav__dropdown-icon nav__dropdown-icon--disaster"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20M2 12h20"/></svg></span>Disaster Relief</a></li>
+                <li><a href="programs.html" class="nav__dropdown-link nav__dropdown-link--all" role="menuitem">All Programs →</a></li>
+              </ul>
+            </li>
+            <li><a href="impact.html" class="nav__link">Impact</a></li>
+            <li><a href="financial-transparency.html" class="nav__link">Transparency</a></li>
+            <li><a href="corporate-partnerships.html" class="nav__link">Partnerships</a></li>
+            <li><a href="get-involved.html" class="nav__link nav__link--active" aria-current="page">Get Involved</a></li>
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
+          </ul>
+          <div class="nav__cta">
+            <a href="donate.html" class="btn btn--primary">Give Now</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
 
     <!-- Page Hero -->
     <section class="page-hero">
@@ -87,7 +76,7 @@
                             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                         </svg>
                     </div>
-                    <h3>Donate</h3>
+                    <h3>Make a Gift</h3>
                     <p>Your financial contribution directly funds medical treatments, education programs, and disaster relief efforts for those in need.</p>
                     <ul class="way-features">
                         <li>100% of donations go to programs</li>
@@ -95,7 +84,7 @@
                         <li>Transparent fund tracking</li>
                         <li>Monthly giving options</li>
                     </ul>
-                    <a href="donate.html" class="btn btn-primary">Donate Now</a>
+                    <a href="donate.html" class="btn btn-primary">Give Now</a>
                 </div>
                 <div class="way-card">
                     <div class="way-icon">
@@ -376,7 +365,7 @@
                 <h2>Ready to Make an Impact?</h2>
                 <p>Your contribution, no matter how small, can transform lives. Join thousands of supporters who are already making a difference.</p>
                 <div class="cta-buttons">
-                    <a href="donate.html" class="btn btn-white">Donate Now</a>
+                    <a href="donate.html" class="btn btn-white">Give Now</a>
                     <a href="contact.html" class="btn btn-outline-white">Contact Us</a>
                 </div>
             </div>
@@ -415,14 +404,14 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="programs.html">Our Programs</a></li>
                         <li><a href="impact.html">Our Impact</a></li>
-                        <li><a href="news.html">News & Updates</a></li>
+                        <li><a href="impact.html">Our Impact</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Get Involved</h4>
                     <ul>
-                        <li><a href="donate.html">Donate Now</a></li>
+                        <li><a href="donate.html">Give Now</a></li>
                         <li><a href="get-involved.html">Volunteer</a></li>
                         <li><a href="get-involved.html">Corporate Partnership</a></li>
                         <li><a href="get-involved.html">Start a Fundraiser</a></li>
@@ -433,7 +422,7 @@
                     <ul>
                         <li><a href="why-impactguru-ink.html">Why ImpactGuru Inc.</a></li>
                         <li><a href="financial-transparency.html">Financial Transparency</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="financial-transparency.html">Transparency</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
                     </ul>
