@@ -15,7 +15,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles/style.css">
@@ -46,12 +46,32 @@
           
           <ul class="nav__list">
             <li><a href="index.html" class="nav__link">Home</a></li>
-            <li><a href="programs.html" class="nav__link">Programs</a></li>
+            <li><a href="about.html" class="nav__link">About</a></li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="programs.html" class="nav__link" aria-haspopup="true">Programs <span class="nav__dropdown-arrow" aria-hidden="true">▾</span></a>
+              <ul class="nav__dropdown" role="menu">
+                <li><a href="critical-care.html" class="nav__dropdown-link" role="menuitem">
+                  <span class="nav__dropdown-icon nav__dropdown-icon--critical">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  </span>Critical Care
+                </a></li>
+                <li><a href="cancer-care.html" class="nav__dropdown-link" role="menuitem">
+                  <span class="nav__dropdown-icon nav__dropdown-icon--cancer">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+                  </span>Cancer Care
+                </a></li>
+                <li><a href="disaster-relief.html" class="nav__dropdown-link" role="menuitem">
+                  <span class="nav__dropdown-icon nav__dropdown-icon--disaster">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20M2 12h20"/></svg>
+                  </span>Disaster Relief
+                </a></li>
+                <li><a href="programs.html" class="nav__dropdown-link nav__dropdown-link--all" role="menuitem">All Programs →</a></li>
+              </ul>
+            </li>
             <li><a href="impact.html" class="nav__link">Impact</a></li>
-            <li><a href="why-impactguru-ink.html" class="nav__link">Why Us</a></li>
-            <li><a href="financial-transparency.html" class="nav__link nav__link--active">Transparency</a></li>
+            <li><a href="financial-transparency.html" class="nav__link nav__link--active" aria-current="page">Transparency</a></li>
             <li><a href="corporate-partnerships.html" class="nav__link">Partnerships</a></li>
-            
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
           </ul>
           
           <div class="nav__cta">
@@ -616,7 +636,7 @@
             <div class="footer__logo-icon">IG</div>
             <div class="footer__logo-text">ImpactGuru <span>Inc.</span></div>
           </a>
-          <p class="footer__tagline">A 501(c)(3) nonprofit organization supporting healthcare access and humanitarian relief programs in India.</p>
+          <p class="footer__tagline">ImpactGuru Inc. is a registered US 501(c)(3) nonprofit organization supporting healthcare access and humanitarian relief programs in India.</p>
           <p class="footer__address">718 Long Bridge Street, Apt 323, San Francisco, CA 94158</p>
           <div class="footer__social">
             <a href="#" class="footer__social-link" aria-label="Facebook">
@@ -637,9 +657,9 @@
         <div class="footer__column">
           <h4>Programs</h4>
           <nav class="footer__links" aria-label="Programs">
-            <a href="programs.html#critical-care" class="footer__link">Critical Care</a>
-            <a href="programs.html#cancer-care" class="footer__link">Cancer Care</a>
-            <a href="programs.html#disaster-relief" class="footer__link">Disaster Relief</a>
+            <a href="critical-care.html" class="footer__link">Critical Care</a>
+            <a href="cancer-care.html" class="footer__link">Cancer Care</a>
+            <a href="disaster-relief.html" class="footer__link">Disaster Relief</a>
             <a href="impact.html" class="footer__link">Our Impact</a>
           </nav>
         </div>
@@ -647,7 +667,7 @@
         <div class="footer__column">
           <h4>Organization</h4>
           <nav class="footer__links" aria-label="Organization">
-            <a href="why-impactguru-ink.html" class="footer__link">About Us</a>
+            <a href="about.html" class="footer__link">About Us</a>
             <a href="financial-transparency.html" class="footer__link">Transparency</a>
             <a href="corporate-partnerships.html" class="footer__link">Partnerships</a>
             <a href="#" class="footer__link">Careers</a>
@@ -660,7 +680,7 @@
             <a href="#" class="footer__link">Privacy Policy</a>
             <a href="#" class="footer__link">Terms of Service</a>
             <a href="#" class="footer__link">Donor Rights</a>
-            <a href="#" class="footer__link">Contact Us</a>
+            <a href="contact.html" class="footer__link">Contact Us</a>
           </nav>
         </div>
       </div>
