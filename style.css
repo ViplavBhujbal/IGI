@@ -1847,7 +1847,7 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  cursor: default;
+  cursor: pointer;
 }
 
 .nav__dropdown-arrow {
@@ -1855,6 +1855,7 @@ p {
   transition: transform var(--transition-fast);
   display: inline-block;
   margin-left: 1px;
+  pointer-events: none;
 }
 
 .nav__item--dropdown:hover .nav__dropdown-arrow,
@@ -1862,22 +1863,34 @@ p {
   transform: rotate(180deg);
 }
 
+/* Invisible bridge fills the gap so hover state doesn't break
+   when the cursor travels from the trigger down into the panel */
+.nav__item--dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: -12px;
+  right: -12px;
+  height: 14px;        /* must be ≥ the gap below */
+  background: transparent;
+}
+
 .nav__dropdown {
   position: absolute;
-  top: calc(100% + 0.75rem);
+  top: calc(100% + 8px);   /* smaller gap — less dead zone */
   left: 50%;
-  transform: translateX(-50%) translateY(-6px);
-  min-width: 240px;
+  transform: translateX(-50%) translateY(-4px);
+  min-width: 250px;
   background: var(--color-white);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-xl);
-  border: 1px solid rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.07);
   padding: 0.5rem;
   list-style: none;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear 0.18s;
   z-index: 999;
 }
 
@@ -1899,13 +1912,14 @@ p {
   visibility: visible;
   pointer-events: auto;
   transform: translateX(-50%) translateY(0);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear 0s;
 }
 
 .nav__dropdown-link {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  padding: 0.65rem 0.9rem;
+  padding: 0.7rem 0.9rem;
   font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 600;
@@ -1945,6 +1959,7 @@ p {
 .nav__dropdown-icon--critical { background: rgba(220, 53, 69, 0.1); }
 .nav__dropdown-icon--cancer   { background: rgba(13, 148, 136, 0.1); }
 .nav__dropdown-icon--disaster { background: rgba(217, 154, 39, 0.1); }
+.nav__dropdown-icon--health   { background: rgba(124, 58, 237, 0.1); }
 
 /* Mobile dropdown — click-toggled */
 @media (max-width: 1024px) {
@@ -2234,3 +2249,13 @@ p {
 section{padding-top:clamp(3rem,8vw,90px);padding-bottom:clamp(3rem,8vw,90px)}
 img{border-radius:clamp(8px,2vw,16px)}
 .nav__list{align-items:center}
+
+
+/* GLOBAL BRAND ENHANCEMENTS */
+body{font-family:Inter,Arial,sans-serif;}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;}
+header,nav{position:sticky;top:0;z-index:9999;backdrop-filter:blur(8px);}
+.card,.program-card{transition:transform .3s ease, box-shadow .3s ease;}
+.card:hover,.program-card:hover{transform:translateY(-6px);}
+.fade-up{animation:fadeUp .8s ease;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
