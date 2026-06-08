@@ -595,5 +595,19 @@
 
   <!-- JavaScript -->
   <script src="js/main.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+   if(e.isIntersecting){e.target.classList.add('active');}
+  });
+ });
+ document.querySelectorAll('section,.card,.story-card,.program-card').forEach(el=>{
+  el.classList.add('reveal');
+  obs.observe(el);
+ });
+});
+</script>
 </body>
 </html>
