@@ -1,372 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Impact Guru Inc.</title>
-    <meta name="description" content="Get in touch with Impact Guru Inc. We're here to answer your questions about our programs and how you can help.">
-    <link rel="stylesheet" href="styles/style.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Impact Guru Inc.</title>
+  <meta name="description" content="Get in touch with Impact Guru Inc. We're here to answer your questions about our programs and how you can help.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
   <noscript><style>.reveal-up,.animate-on-scroll{opacity:1!important;transform:none!important}</style></noscript>
 </head>
-<body class="contact-page">
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="index.html" class="logo">
-                    <span class="logo-icon">
-                        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
-                            <path d="M20 8C20 8 12 16 12 22C12 26.4183 15.5817 30 20 30C24.4183 30 28 26.4183 28 22C28 16 20 8 20 8Z" fill="currentColor"/>
-                            <circle cx="20" cy="22" r="4" fill="white"/>
-                        </svg>
-                    </span>
-                    <span class="logo-text">Impact Guru <span class="logo-ink">Inc.</span></span>
-                </a>
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="programs.html">Programs</a></li>
-                    <li><a href="impact.html">Our Impact</a></li>
-                    <li><a href="why-impactguru-ink.html">Why Us</a></li>
-                    <li><a href="financial-transparency.html">Transparency</a></li>
-                    <li><a href="get-involved.html">Get Involved</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                    <li><a href="donate.html" class="nav-donate-btn">Give Now</a></li>
-                </ul>
-            </nav>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo" aria-label="Impact Guru Inc. Home">
+          <div class="header__logo-icon">IG</div>
+          <div class="header__logo-text">Impact Guru <span>Inc.</span></div>
+        </a>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="about.html" class="nav__link" aria-haspopup="true">Who We Are <span class="nav__dropdown-arrow" aria-hidden="true">▾</span></a>
+              <ul class="nav__dropdown" role="menu">
+                <li><a href="about.html" class="nav__dropdown-link" role="menuitem"><span class="nav__dropdown-icon nav__dropdown-icon--whoweare"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>About Us</a></li>
+                <li><a href="about.html#team-title" class="nav__dropdown-link" role="menuitem"><span class="nav__dropdown-icon nav__dropdown-icon--team"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>Our Team</a></li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="programs.html" class="nav__link" aria-haspopup="true">Programs <span class="nav__dropdown-arrow" aria-hidden="true">▾</span></a>
+              <ul class="nav__dropdown" role="menu">
+                <li><a href="critical-care.html" class="nav__dropdown-link" role="menuitem"><span class="nav__dropdown-icon nav__dropdown-icon--critical"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>Critical Care</a></li>
+                <li><a href="cancer-care.html" class="nav__dropdown-link" role="menuitem"><span class="nav__dropdown-icon nav__dropdown-icon--cancer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg></span>Cancer Care</a></li>
+                <li><a href="disaster-relief.html" class="nav__dropdown-link" role="menuitem"><span class="nav__dropdown-icon nav__dropdown-icon--disaster"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20M2 12h20"/></svg></span>Disaster Relief</a></li>
+                <li><a href="health-campaigns.html" class="nav__dropdown-link" role="menuitem"><span class="nav__dropdown-icon nav__dropdown-icon--health"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></span>Health Camps</a></li>
+                <li><a href="programs.html" class="nav__dropdown-link nav__dropdown-link--all" role="menuitem">All Programs →</a></li>
+              </ul>
+            </li>
+            <li><a href="impact.html" class="nav__link">Impact</a></li>
+            <li><a href="contact.html" class="nav__link nav__link--active" aria-current="page">Contact</a></li>
+          </ul>
+          <div class="nav__cta">
+            <a href="donate.html" class="btn btn--primary">Give Now</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="page-header__content">
+          <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span>/</span>
+            <span aria-current="page">Contact</span>
+          </nav>
+          <h1>Contact Us</h1>
+          <p>Have questions about our programs or want to learn more about how you can help? We'd love to hear from you.</p>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <!-- Page Hero -->
-        <section class="page-hero">
-            <div class="container">
-                <div class="page-hero-content">
-                    <span class="hero-tag">Get In Touch</span>
-                    <h1>Contact Us</h1>
-                    <p>Have questions about our programs or want to learn more about how you can help? We'd love to hear from you.</p>
-                </div>
-            </div>
-        </section>
+    <!-- Contact Section -->
+    <section class="contact-section section">
+      <div class="container">
+        <div class="contact-section__grid">
+          <!-- Form -->
+          <div class="contact-form animate-on-scroll">
+            <h2 style="font-size:clamp(1.5rem,3vw,2rem);margin-bottom:.5rem;">Send Us a Message</h2>
+            <p style="margin-bottom:1.5rem;">Fill out the form below and we'll get back to you within 24–48 hours.</p>
 
-        <!-- Contact Section -->
-        <section class="contact-section section">
-            <div class="container">
-                <div class="contact-grid">
-                    <!-- Contact Form -->
-                    <div class="contact-form-wrapper">
-                        <h2>Send Us a Message</h2>
-                        <p>Fill out the form below and we'll get back to you within 24-48 hours.</p>
-                        
-                        <form class="contact-form" id="contactForm">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="firstName">First Name *</label>
-                                    <input type="text" id="firstName" name="firstName" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastName">Last Name *</label>
-                                    <input type="text" id="lastName" name="lastName" required>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject">Subject *</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Select a subject</option>
-                                    <option value="general">General Inquiry</option>
-                                    <option value="volunteer">Volunteering</option>
-                                    <option value="partnership">Partnership Opportunities</option>
-                                    <option value="donation">Donation Questions</option>
-                                    <option value="media">Media Inquiry</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help..."></textarea>
-                            </div>
-                            
-                            <div class="form-group checkbox-group">
-                                <input type="checkbox" id="newsletter" name="newsletter">
-                                <label for="newsletter">Subscribe to our newsletter for updates on our impact</label>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary btn-full">
-                                <span>Send Message</span>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/>
-                                </svg>
-                            </button>
-                        </form>
-                        
-                        <div class="form-success" id="formSuccess" style="display: none;">
-                            <div class="success-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <path d="M9 12l2 2 4-4"/>
-                                </svg>
-                            </div>
-                            <h3>Message Sent Successfully!</h3>
-                            <p>Thank you for reaching out. We'll get back to you within 24-48 hours.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Contact Info -->
-                    <div class="contact-info">
-                        <div class="contact-info-card">
-                            <h3>Contact Information</h3>
-                            <p>Reach out to us through any of these channels. We're here to help!</p>
-                            
-                            <div class="contact-methods">
-                                <div class="contact-method">
-                                    <div class="contact-method-icon">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                            <circle cx="12" cy="10" r="3"/>
-                                        </svg>
-                                    </div>
-                                    <div class="contact-method-content">
-                                        <h4>Office Address</h4>
-                                        <p>Impact Guru Inc. Foundation<br>
-                                        123 Hope Street, Suite 456<br>
-                                        Mumbai, Maharashtra 400001<br>
-                                        India</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="contact-method">
-                                    <div class="contact-method-icon">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                            <polyline points="22,6 12,13 2,6"/>
-                                        </svg>
-                                    </div>
-                                    <div class="contact-method-content">
-                                        <h4>Email Us</h4>
-                                        <p><a href="mailto:hello@impactguruinc.org">hello@impactguruinc.org</a></p>
-                                        <p><a href="mailto:volunteer@impactguruinc.org">volunteer@impactguruinc.org</a></p>
-                                    </div>
-                                </div>
-                                
-                                <div class="contact-method">
-                                    <div class="contact-method-icon">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                        </svg>
-                                    </div>
-                                    <div class="contact-method-content">
-                                        <h4>Call Us</h4>
-                                        <p><a href="tel:+911234567890">+91 123 456 7890</a></p>
-                                        <p class="text-muted">Mon-Fri: 9:00 AM - 6:00 PM IST</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="social-connect">
-                                <h4>Connect With Us</h4>
-                                <div class="social-links">
-                                    <a href="#" class="social-link" aria-label="Facebook">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="social-link" aria-label="Twitter">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="social-link" aria-label="Instagram">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="social-link" aria-label="LinkedIn">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="social-link" aria-label="YouTube">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- FAQ Preview -->
-                        <div class="faq-preview">
-                            <h3>Frequently Asked Questions</h3>
-                            <div class="faq-items">
-                                <div class="faq-item">
-                                    <button class="faq-question" aria-expanded="false">
-                                        <span>How can I donate to Impact Guru Inc.?</span>
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <polyline points="6,9 12,15 18,9"/>
-                                        </svg>
-                                    </button>
-                                    <div class="faq-answer">
-                                        <p>You can donate through our secure online donation page, via bank transfer, or by sending a check. Visit our <a href="donate.html">Give Now page</a> for all options.</p>
-                                    </div>
-                                </div>
-                                <div class="faq-item">
-                                    <button class="faq-question" aria-expanded="false">
-                                        <span>Are my donations tax-deductible?</span>
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <polyline points="6,9 12,15 18,9"/>
-                                        </svg>
-                                    </button>
-                                    <div class="faq-answer">
-                                        <p>Yes! Impact Guru Inc. is a registered 501(c)(3) nonprofit organization. All donations are tax-deductible to the extent allowed by law.</p>
-                                    </div>
-                                </div>
-                                <div class="faq-item">
-                                    <button class="faq-question" aria-expanded="false">
-                                        <span>How do I become a volunteer?</span>
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <polyline points="6,9 12,15 18,9"/>
-                                        </svg>
-                                    </button>
-                                    <div class="faq-answer">
-                                        <p>Visit our <a href="get-involved.html">Get Involved page</a> to fill out a volunteer application. We'll match you with opportunities based on your skills and interests.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" required>
                 </div>
-            </div>
-        </section>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="volunteer">Volunteering</option>
+                  <option value="donation">Donation Questions</option>
+                  <option value="media">Media Inquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;gap:.5rem;">
+                Send Message
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/></svg>
+              </button>
+            </form>
 
-        <!-- Map Section -->
-        <section class="map-section">
-            <div class="container">
-                <div class="map-wrapper">
-                    <div class="map-placeholder">
-                        <div class="map-overlay">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
-                            <h3>Visit Our Office</h3>
-                            <p>123 Hope Street, Suite 456<br>Mumbai, Maharashtra 400001</p>
-                            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                                Get Directions
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div id="formSuccess" style="display:none;text-align:center;padding:2rem;">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" style="margin:0 auto 1rem;display:block;"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+              <h3>Message Sent!</h3>
+              <p>Thank you for reaching out. We'll get back to you within 24–48 hours.</p>
             </div>
-        </section>
+          </div>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content">
-                    <h2>Ready to Make an Impact?</h2>
-                    <p>Join thousands of supporters who are helping us create lasting change in communities around the world.</p>
-                    <div class="cta-buttons">
-                        <a href="donate.html" class="btn btn-primary btn-lg">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                            </svg>
-                            Give Now
-                        </a>
-                        <a href="get-involved.html" class="btn btn-outline btn-lg">Volunteer With Us</a>
-                    </div>
-                </div>
+          <!-- Contact Info -->
+          <div class="contact-info animate-on-scroll" style="transition-delay:.1s">
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-info__content">
+                <h4>Our Office</h4>
+                <p>718 Long Bridge Street, Apt 323<br>San Francisco, CA 94158</p>
+              </div>
             </div>
-        </section>
-    </main>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-info__content">
+                <h4>Email Us</h4>
+                <p><a href="mailto:info@impactguruinc.org">info@impactguruinc.org</a></p>
+                <p><a href="mailto:donate@impactguruinc.org">donate@impactguruinc.org</a></p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-info__content">
+                <h4>Call Us</h4>
+                <p><a href="tel:+14155551234">(415) 555-1234</a></p>
+                <p style="font-size:.875rem;color:var(--color-dark-gray);">Mon–Fri, 9am–5pm PST</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="contact-info__content">
+                <h4>Response Time</h4>
+                <p>We typically respond within 24–48 hours on business days.</p>
+              </div>
+            </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="footer-logo">
-                        <span class="logo-icon">
-                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
-                                <path d="M20 8C20 8 12 16 12 22C12 26.4183 15.5817 30 20 30C24.4183 30 28 26.4183 28 22C28 16 20 8 20 8Z" fill="currentColor"/>
-                                <circle cx="20" cy="22" r="4" fill="var(--color-primary)"/>
-                            </svg>
-                        </span>
-                        <span class="logo-text">Impact Guru <span class="logo-ink">Inc.</span></span>
-                    </a>
-                    <p>Empowering communities through sustainable development, education, and healthcare initiatives since 2015.</p>
-                    <p class="footer__address">718 Long Bridge Street, Apt 323, San Francisco, CA 94158</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-                        <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-                        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="programs.html">Our Programs</a></li>
-                        <li><a href="health-campaigns.html">Health Camps</a></li>
-                        <li><a href="impact.html">Our Impact</a></li>
-                        <li><a href="why-impactguru-ink.html">Why Us</a></li>
-                        <li><a href="financial-transparency.html">Transparency</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Get Involved</h4>
-                    <ul>
-                        <li><a href="donate.html">Give Now</a></li>
-                        <li><a href="get-involved.html">Volunteer</a></li>
-                        <li><a href="get-involved.html#partner">Partner With Us</a></li>
-                        <li><a href="corporate-partnerships.html">Corporate Giving</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-newsletter">
-                    <h4>Stay Updated</h4>
-                    <p>Subscribe to our newsletter for impact stories and updates.</p>
-                    <form class="newsletter-form" id="footerNewsletter">
-                        <input type="email" placeholder="Your email address" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
-                </div>
+            <!-- FAQ -->
+            <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid var(--color-light-gray);">
+              <h3 style="font-size:1.25rem;margin-bottom:1rem;">Common Questions</h3>
+              <div style="display:flex;flex-direction:column;gap:.75rem;">
+                <details style="border:1px solid var(--color-light-gray);border-radius:var(--radius-md);overflow:hidden;">
+                  <summary style="padding:.875rem 1rem;cursor:pointer;font-weight:600;font-size:.9375rem;list-style:none;">Are donations tax-deductible?</summary>
+                  <p style="padding:0 1rem 1rem;font-size:.9rem;color:var(--color-text-light);">Yes. Impact Guru Inc. is a registered 501(c)(3) nonprofit. All donations are tax-deductible to the extent allowed by law. EIN: 87-3861987</p>
+                </details>
+                <details style="border:1px solid var(--color-light-gray);border-radius:var(--radius-md);overflow:hidden;">
+                  <summary style="padding:.875rem 1rem;cursor:pointer;font-weight:600;font-size:.9375rem;list-style:none;">How can I get involved?</summary>
+                  <p style="padding:0 1rem 1rem;font-size:.9rem;color:var(--color-text-light);">Visit our <a href="get-involved.html" style="color:var(--color-primary);">Get Involved page</a> for volunteer opportunities, fundraising options, and more ways to support our mission.</p>
+                </details>
+                <details style="border:1px solid var(--color-light-gray);border-radius:var(--radius-md);overflow:hidden;">
+                  <summary style="padding:.875rem 1rem;cursor:pointer;font-weight:600;font-size:.9375rem;list-style:none;">Where do donations go?</summary>
+                  <p style="padding:0 1rem 1rem;font-size:.9rem;color:var(--color-text-light);">87% of every dollar goes directly to healthcare programs. We maintain full financial transparency with audited annual reports.</p>
+                </details>
+              </div>
             </div>
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2024 Impact Guru Inc. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-                    <div class="footer-certifications">
-                        <span class="certification-badge">501(c)(3) Certified</span>
-                        <span class="certification-badge">GuideStar Platinum</span>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="js/main.js"></script>
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-section__content">
+          <h2>Ready to Make an Impact?</h2>
+          <p>Join thousands of supporters helping us create lasting change for communities across India.</p>
+          <div class="cta-section__buttons">
+            <a href="donate.html" class="btn btn--primary btn--large">Give Now</a>
+            <a href="get-involved.html" class="btn btn--outline-white btn--large">Get Involved</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <div class="footer__logo-icon">IG</div>
+            <div class="footer__logo-text">Impact Guru <span>Inc.</span></div>
+          </a>
+          <p class="footer__tagline">Impact Guru Inc. is a registered US 501(c)(3) nonprofit organization supporting healthcare access and humanitarian relief programs in India.</p>
+          <p class="footer__address">718 Long Bridge Street, Apt 323, San Francisco, CA 94158</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__column">
+          <h4>Programs</h4>
+          <nav class="footer__links" aria-label="Programs">
+            <a href="critical-care.html" class="footer__link">Critical Care</a>
+            <a href="cancer-care.html" class="footer__link">Cancer Care</a>
+            <a href="disaster-relief.html" class="footer__link">Disaster Relief</a>
+            <a href="health-campaigns.html" class="footer__link">Health Camps</a>
+            <a href="impact.html" class="footer__link">Our Impact</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4>Organization</h4>
+          <nav class="footer__links" aria-label="Organization">
+            <a href="about.html" class="footer__link">Who We Are</a>
+            <a href="get-involved.html" class="footer__link">Get Involved</a>
+            <a href="contact.html" class="footer__link">Contact Us</a>
+            <a href="donate.html" class="footer__link">Give Now</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4>Legal</h4>
+          <nav class="footer__links" aria-label="Legal">
+            <a href="#" class="footer__link">Privacy Policy</a>
+            <a href="#" class="footer__link">Terms of Service</a>
+            <a href="#" class="footer__link">Donor Rights</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 Impact Guru Inc. All rights reserved. EIN: 87-3861987</p>
+        <div class="footer__legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Contact form submit
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+  </script>
 </body>
 </html>
