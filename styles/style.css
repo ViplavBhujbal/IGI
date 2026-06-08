@@ -308,13 +308,14 @@ p {
    Header / Navigation
    ============================================ */
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
   z-index: 1000;
   background-color: var(--color-white);
-  transition: all var(--transition-base);
+  transition: box-shadow var(--transition-base), background-color var(--transition-base);
 }
 
 .header--scrolled {
@@ -2280,19 +2281,11 @@ section + section {
 }
 
 /* ============================================
-   NAVIGATION — Sticky + Visual Polish
+   NAVIGATION — Visual Polish
    ============================================ */
-.header {
-  position: sticky !important;
-  top: 0;
-  box-shadow: 0 1px 0 rgba(0,0,0,.06);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  background-color: rgba(255,255,255,.96) !important;
-}
-
 .header--scrolled {
   box-shadow: 0 2px 20px rgba(0,0,0,.09);
+  background-color: rgba(255,255,255,.97) !important;
 }
 
 .nav__link {
