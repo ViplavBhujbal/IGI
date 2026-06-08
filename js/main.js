@@ -1,46 +1,40 @@
 /* ============================================
    Impact Guru Inc. — main.js
-   Scroll reveal · Counters · Nav · Dropdown
    ============================================ */
 
+/* Mark JS as active immediately — reveals reveal-up guard in CSS */
+document.documentElement.classList.add('js');
+
 document.addEventListener('DOMContentLoaded', function () {
-
-  /* ── Sticky header shadow ──────────────────── */
-  const header = document.querySelector('.header');
-  if (header) {
-    window.addEventListener('scroll', function () {
-      header.classList.toggle('header--scrolled', window.scrollY > 20);
-    }, { passive: true });
-  }
-
-  /* ── Mobile nav toggle ─────────────────────── */
+  initHeader();
   initMobileNav();
-
-  /* ── Programs dropdown ─────────────────────── */
   initDropdownNav();
-
-  /* ── Scroll reveal (Intersection Observer) ─── */
   initScrollReveal();
-
-  /* ── Animated counters ─────────────────────── */
   initCounters();
 });
 
-/* ─────────────────────────────────────────────
-   Mobile Navigation
-───────────────────────────────────────────── */
-function initMobileNav () {
-  const toggle = document.querySelector('.nav__toggle');
-  const navList = document.querySelector('.nav__list');
+/* ── Sticky header shadow ─────────────────── */
+function initHeader() {
+  var header = document.querySelector('.header');
+  if (!header) return;
+  window.addEventListener('scroll', function () {
+    header.classList.toggle('header--scrolled', window.scrollY > 20);
+  }, { passive: true });
+}
+
+/* ── Mobile nav toggle ────────────────────── */
+function initMobileNav() {
+  var toggle  = document.querySelector('.nav__toggle');
+  var navList = document.querySelector('.nav__list');
   if (!toggle || !navList) return;
 
-  function openNav () {
+  function openNav() {
     navList.classList.add('nav__list--open');
     toggle.classList.add('nav__toggle--active');
     toggle.setAttribute('aria-expanded', 'true');
     document.body.classList.add('nav-open');
   }
-  function closeNav () {
+  function closeNav() {
     navList.classList.remove('nav__list--open');
     toggle.classList.remove('nav__toggle--active');
     toggle.setAttribute('aria-expanded', 'false');
@@ -51,42 +45,30 @@ function initMobileNav () {
     e.stopPropagation();
     navList.classList.contains('nav__list--open') ? closeNav() : openNav();
   });
-
-  navList.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', closeNav);
-  });
-
+  navList.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeNav); });
   document.addEventListener('click', function (e) {
     if (!toggle.contains(e.target) && !navList.contains(e.target)) closeNav();
   });
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeNav();
-  });
-
-  window.addEventListener('resize', function () {
-    if (window.innerWidth > 1024) closeNav();
-  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeNav(); });
+  window.addEventListener('resize', function () { if (window.innerWidth > 1024) closeNav(); });
 }
 
-/* ─────────────────────────────────────────────
-   Programs Dropdown
-───────────────────────────────────────────── */
-function initDropdownNav () {
+/* ── Programs dropdown ────────────────────── */
+function initDropdownNav() {
   document.querySelectorAll('.nav__item--dropdown').forEach(function (item) {
-    const trigger  = item.querySelector('.nav__link');
-    const dropdown = item.querySelector('.nav__dropdown');
+    var trigger  = item.querySelector('.nav__link');
+    var dropdown = item.querySelector('.nav__dropdown');
     if (!trigger || !dropdown) return;
 
     trigger.addEventListener('click', function (e) {
       if (window.innerWidth <= 1024) {
         e.preventDefault();
         e.stopPropagation();
-        const isOpen = dropdown.classList.contains('nav__dropdown--open');
+        var open = dropdown.classList.contains('nav__dropdown--open');
         document.querySelectorAll('.nav__dropdown--open').forEach(function (d) {
           d.classList.remove('nav__dropdown--open');
         });
-        if (!isOpen) dropdown.classList.add('nav__dropdown--open');
+        if (!open) dropdown.classList.add('nav__dropdown--open');
       }
     });
   });
@@ -98,7 +80,6 @@ function initDropdownNav () {
       });
     }
   });
-
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
       document.querySelectorAll('.nav__dropdown--open').forEach(function (d) {
@@ -108,20 +89,15 @@ function initDropdownNav () {
   });
 }
 
-/* ─────────────────────────────────────────────
-   Scroll Reveal — fade up on enter viewport
-───────────────────────────────────────────── */
-function initScrollReveal () {
-  /* Support legacy .animate-on-scroll class AND new .reveal-up */
-  var els = document.querySelectorAll('.reveal-up, .animate-on-scroll');
-  if (!els.length) return;
-
-  /* Add reveal-up to animate-on-scroll for consistent behaviour */
-  els.forEach(function (el) {
-    if (!el.classList.contains('reveal-up')) {
-      el.classList.add('reveal-up');
-    }
-  });
+/* ── Scroll Reveal ────────────────────────── */
+function initScrollReveal() {
+  if (!('IntersectionObserver' in window)) {
+    /* Fallback: make everything visible if IO not supported */
+    document.querySelectorAll('.reveal-up, .animate-on-scroll').forEach(function (el) {
+      el.classList.add('in-view');
+    });
+    return;
+  }
 
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
@@ -130,50 +106,45 @@ function initScrollReveal () {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.1, rootMargin: '0px 0px -32px 0px' });
 
-  document.querySelectorAll('.reveal-up').forEach(function (el) {
+  document.querySelectorAll('.reveal-up, .animate-on-scroll').forEach(function (el) {
     observer.observe(el);
   });
 }
 
-/* ─────────────────────────────────────────────
-   Animated Counters
-───────────────────────────────────────────── */
-function initCounters () {
-  var counterEls = document.querySelectorAll('[data-counter]');
-  if (!counterEls.length) return;
+/* ── Animated Counters ────────────────────── */
+function initCounters() {
+  var els = document.querySelectorAll('[data-counter]');
+  if (!els.length || !('IntersectionObserver' in window)) return;
 
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
-        animateCounter(entry.target);
+        runCounter(entry.target);
         observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.3 });
 
-  counterEls.forEach(function (el) { observer.observe(el); });
+  els.forEach(function (el) { observer.observe(el); });
 }
 
-function animateCounter (el) {
+function runCounter(el) {
   var target   = parseInt(el.getAttribute('data-counter'), 10);
   var prefix   = el.getAttribute('data-prefix')  || '';
   var suffix   = el.getAttribute('data-suffix')  || '';
-  var duration = 1600;
-  var startTime = null;
+  var duration = 1500;
+  var start    = null;
 
-  function step (timestamp) {
-    if (!startTime) startTime = timestamp;
-    var progress = Math.min((timestamp - startTime) / duration, 1);
-    var eased    = 1 - Math.pow(1 - progress, 3);   /* ease-out cubic */
-    var current  = Math.floor(eased * target);
-
+  function tick(ts) {
+    if (!start) start = ts;
+    var pct     = Math.min((ts - start) / duration, 1);
+    var eased   = 1 - Math.pow(1 - pct, 3);
+    var current = Math.floor(eased * target);
     el.textContent = prefix + current.toLocaleString() + suffix;
-
-    if (progress < 1) requestAnimationFrame(step);
+    if (pct < 1) requestAnimationFrame(tick);
     else el.textContent = prefix + target.toLocaleString() + suffix;
   }
-
-  requestAnimationFrame(step);
+  requestAnimationFrame(tick);
 }
